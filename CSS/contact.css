@@ -107,15 +107,14 @@ h1 {
   font-weight: bold;
   font-size: 3rem;
 }
-.fifth-v {
-  height: 100vh;
+body {
+  /* height: 100vh; */
   background-image: url(https://images.cdn3.stockunlimited.net/preview1300/honeycomb-background-design_1999709.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .vessel {
-  height: 100vh;
   color: white;
 }
 .fab {
@@ -124,10 +123,7 @@ h1 {
   margin: 0 1rem;
 }
 .contact-b {
-  border: 5px solid white;
-  background-color: indianred;
-  height: 100%;
-  width: 100%;
+  background-color: #B2B1B9;
 }
 @media only screen and (max-width: 600px) {
 
@@ -161,12 +157,12 @@ h1 {
   .fas {
     color: white;
   }
-  .fifth-v {
+  /* .fifth-v {
     height: 100%;
   }
   .vessel {
     height: 100%;
-  }
+  } */
   footer {
     margin-bottom: 3rem;
   }
@@ -187,12 +183,12 @@ h1 {
   .barnav:hover .link-text {
     display: inline;
   }
-  .fifth-v {
+  /* .fifth-v {
     height: 100%;
   }
   .vessel {
     height: 100%;
-  }
+  } */
   .comtact-b {
     padding-bottom: 5rem;
   }

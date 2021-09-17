@@ -9,7 +9,7 @@
 .barnav {
   position: fixed;
   background-color: #261C2C;
-  height: 98vh;
+  height: 100vh;
   width: 3%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -112,18 +112,6 @@ font-size: 2.5rem;
 color: white;
 text-shadow: 10px;
 }
-.vessel {
-  height: 100vh;
-}
-.fourth-v {
-  height: 100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.margin {
-  border: 5px solid white;
-}
 .carousel-indicators li{
   background-color: black;
   height: 0.5rem;
@@ -139,16 +127,24 @@ text-shadow: 10px;
     border-radius: 50%;
     border: 1px solid black;
 }
-@media only screen and (max-width: 600px) {
+.foot-icon {
+  font-size: 2rem;
+  color: white;
+  margin: 0 1rem;
+}
+
+@media  only screen and (max-width: 600px) {
 
   .barnav {
   bottom: 0;
   width: 100vw;
   height: 3rem;
+  border-radius: 3px;
   }
   .barnav:hover {
     width: 100vw;
   }
+
   .barnav-logo {
   display: none;
   }
@@ -170,20 +166,8 @@ text-shadow: 10px;
   .fas {
     color: white;
   }
-  .vessel {
-    height: 100%;
-  }
-  .fourth-v {
-    height: 100%;
-    flex-direction: column;
-    padding-bottom: 5rem;
-  }
   .carousel {
-    width: 300px;
-  }
-  .margin {
-    margin: 0 auto;
-    padding: auto 0;
+    width: 200px;
   }
 
 }
@@ -198,13 +182,6 @@ text-shadow: 10px;
   }
   .barnav:hover .link-text {
     display: inline;
-  }
-  .vessel {
-    height: 100vh;
-  }
-  .fourth-v {
-    height: 100vh;
-    flex-direction: column;
   }
   .carousel {
     width: 200px;

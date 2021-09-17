@@ -122,7 +122,12 @@ body {
   animation: rgb 6s linear infinite;
 }
 .card {
-  border: 10px solid indianred;
+  border: 2px solid indianred;
+}
+.foot-icon {
+  font-size: 2rem;
+  color: white;
+  margin: 0 1rem;
 }
 @media only screen and (max-width: 600px) {
 

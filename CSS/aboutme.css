@@ -9,7 +9,7 @@
 .barnav {
   position: fixed;
   background-color: #261C2C;
-  height: 98vh;
+  height: 100vh;
   width: 3%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -100,16 +100,14 @@
  margin-right: 1rem;
 }
 /* -----------------------------------End of Navbar---------------------------*/
-.vessel {
-height: 100%;
-color: white;
-}
-.second-v {
+body {
   background-image: url(https://images.cdn3.stockunlimited.net/preview1300/honeycomb-background-design_1999709.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+}
+.vessel {
+color: white;
 }
 .profile-img {
   height: 200px;
@@ -124,6 +122,11 @@ color: white;
 .p-text {
   font-size: 1.5rem;
   padding: 0 4rem;
+}
+.foot-icon {
+  font-size: 2rem;
+  color: white;
+  margin: 0 1rem;
 }
 @media only screen and (max-width: 600px) {
 
