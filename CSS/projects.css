@@ -1,0 +1,171 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Navigation Bar */
+.barnav {
+  position: fixed;
+  background-color: #261C2C;
+  height: 98vh;
+  width: 3%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: width 600ms ease;
+  z-index: 2;
+}
+.barnav:hover {
+  width: 16rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.barnav:hover .link-text, .logo-text{
+  display: block;
+}
+.barnav:hover .fas {
+  color: white;
+}
+.barnav:hover #logo {
+  color: #CCA43D;
+}
+.barnav:hover .logo-text {
+  color: #CCA43D;
+}
+.barnav:hover .barnav-logo .fas {
+  transform: rotate(-360deg);
+}
+.barnav-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.van-item {
+ width: 100%;
+}
+.van-link {
+ display: flex;
+ align-items: center;
+ height: 5em;
+ text-decoration: none;
+ transition: var(--transition-speed);
+}
+.van-link:hover {
+ text-decoration: none;
+}
+.link-text:hover {
+ color: black;
+ display: block;
+ font-weight: bold;
+}
+.link-text {
+ display: none;
+ color: black;
+ font-weight: bold;
+}
+.van-link .fas {
+ min-width: 2rem;
+ width: 2rem;
+ margin: 0 0.5rem;
+}
+.fas {
+ font-size: 1.5rem;
+ transition: var(--transition-speed);
+ color: gray;
+}
+.barnav-logo {
+ font-weight: bold;
+ text-transform: uppercase;
+ margin-bottom: 1rem;
+ text-align: center;
+ color: white;
+ font-size: 1.5rem;
+ letter-spacing: 0.3ch;
+ width: 100%;
+}
+.barnav-logo .fas {
+ transform: rotate(0deg);
+ transition: 600ms ease;
+}
+.text-vessel {
+ width: 100%;
+ height: 2em;
+ background-color: white;;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 100rem;
+ margin-right: 1rem;
+}
+/* -----------------------------------End of Navbar---------------------------*/
+body {
+  background-image: url(https://images.cdn3.stockunlimited.net/preview1300/honeycomb-background-design_1999709.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-font {
+  font-weight: bold;
+  font-size: 3rem;
+}
+@keyframes rgb {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.rgb::after {
+  border-radius: 16px;
+  filter: blur(8px);
+  transform: translateZ(-1px); /*or z-index */
+  animation: rgb 6s linear infinite;
+}
+.card {
+  border: 10px solid indianred;
+}
+@media only screen and (max-width: 600px) {
+
+  .barnav {
+  bottom: 0;
+  width: 100vw;
+  height: 3rem;
+  }
+  .barnav:hover {
+    width: 100vw;
+  }
+  .barnav-logo {
+  display: none;
+  }
+  .barnav-nav {
+  flex-direction: row;
+  }
+  .fas {
+    font-size: 1rem;
+  }
+  .van-link {
+    justify-content: center;
+  }
+  .van-link .fas {
+    margin-bottom: 2rem;
+  }
+  .text-vessel {
+    display: none;
+  }
+  .fas {
+    color: white;
+  }
+
+}
+@media only screen and (min-width: 600px) {
+  .barnav {
+    width: 3rem;
+  }
+  .barnav:hover {
+    width: 12rem;
+  }
+  .barnav:hover .link-text {
+    display: inline;
+  }
+
+}
