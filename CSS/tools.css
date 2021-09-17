@@ -112,25 +112,16 @@ font-size: 2.5rem;
 color: white;
 text-shadow: 10px;
 }
-.carousel-indicators li{
-  background-color: black;
-  height: 0.5rem;
-  width: 1rem;
-  border-radius: 50%;
-}
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 2rem;
-    width: 2rem;
-    outline: black;
-    background-color: black;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    border: 1px solid black;
-}
+
 .foot-icon {
   font-size: 2rem;
   color: white;
   margin: 0 1rem;
+}
+
+.tools-img {
+  border: 2px solid white;
+  border-radius: 100px;
 }
 
 @media  only screen and (max-width: 600px) {
@@ -166,9 +157,6 @@ text-shadow: 10px;
   .fas {
     color: white;
   }
-  .carousel {
-    width: 200px;
-  }
 
 }
 @media screen and (min-width: 600px) and (max-width: 1055px) {
@@ -184,16 +172,11 @@ text-shadow: 10px;
     display: inline;
   }
   .carousel {
-    width: 200px;
-  }
-  .margin {
-    margin: 0 auto;
-    padding: auto 0;
-  }
+    width: 350px;
+}
   h2 {
     font-size: 2rem;
   }
   .fas {
     color: white;
-  }
 }
